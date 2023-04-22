@@ -1,3 +1,0 @@
-COPY public.despesa_por_credores (id, cnpj_cpf_credor, nome_credor, acao, unidade_gestora, gestao, tipo_de_despesa, programa_de_trabalho, funcao, subfuncao, subtitulo, programa, categoria_economica, grupo_natureza_despesa, modalidade_de_aplicacao, elemento_da_despesa, fonte_de_recursos, nr_do_processo, empenhado, liquidado, total_pago) FROM '/home/augusto/projetos/projeto_FBD/dados/despesas_por_credor_2020_pv.csv' 
-DELIMITER ';' 
-CSV HEADER QUOTE '\"';""
