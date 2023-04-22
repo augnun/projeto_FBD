@@ -1,0 +1,41 @@
+CREATE TABLE despesa_por_credores( 
+    id INTEGER PRIMARY KEY,
+    cnpj_cpf_credor VARCHAR(100),
+    nome_credor VARCHAR(100),
+    acao VARCHAR(100),
+    unidade_gestora VARCHAR(100),
+    gestao VARCHAR(50),
+    tipo_de_despesa VARCHAR(30),
+    programa_de_trabalho VARCHAR(200),
+    funcao VARCHAR(20),
+    subfuncao VARCHAR(50),
+    subtitulo VARCHAR(200),
+    programa VARCHAR(50),
+    categoria_economica VARCHAR(50),
+    grupo_natureza_despesa VARCHAR(50),
+    modalidade_de_aplicacao	VARCHAR(100),
+    elemento_da_despesa VARCHAR(100),
+    fonte_de_recursos VARCHAR(200),
+    nr_do_processo VARCHAR(50),
+    empenhado MONEY,
+    liquidado MONEY,
+    total_pago MONEY
+);
+
+CREATE TABLE contratos(
+    id INTEGER PRIMARY KEY,
+    n_siggo INT,
+    n_original VARCHAR(50),
+    orgao VARCHAR(50),
+    nome_credor VARCHAR(100),
+    cnpj_cpf_credor VARCHAR(20),
+    gestao VARCHAR(50),
+    especie VARCHAR(50),
+    nr_do_processo VARCHAR(50),
+    objeto VARCHAR(500),
+    inicio DATE,
+    termino DATE,
+    aditivos INT,
+    finalidade VARCHAR(100),
+    valor MONEY
+);
