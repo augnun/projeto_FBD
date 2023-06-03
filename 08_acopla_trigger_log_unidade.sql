@@ -1,0 +1,4 @@
+CREATE TRIGGER trigger_log_unidade
+AFTER INSERT OR UPDATE OR DELETE ON unidade
+FOR EACH ROW
+EXECUTE PROCEDURE unidade_log_unidade();
